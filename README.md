@@ -1,12 +1,12 @@
-# React Component Lifecycle
+# React Component Lifecycle #done
 
-## Overview 
+## Overview
 
-In this lesson, we'll describe the phases, as well as the importance, of the React component lifecycle. 
+In this lesson, we'll describe the phases, as well as the importance, of the React component lifecycle.
 
 ## Objectives
 
-1. Distinguish between props and states as they relate to React components 
+1. Distinguish between props and states as they relate to React components
 2. Describe the three phases of the React component lifecycle
 3. Define lifecycle methods and how they enable the component to react to different events
 4. Define and describe various lifecyclce methods
@@ -29,7 +29,7 @@ These methods are called *lifecycle* methods, because they are called at differe
 The only required method for a React component to be valid is the `render()` method which describes what the HTML for the component looks like. There are a whole host of optional methods you can use if you need more control over how the component responds to change.
 
 ## Mounting
-When the component is initially created, it gets "mounted" onto the DOM. It sounds more complicated than it is: essentially the component figures out its initial state and renders its initial HTML onto the page. At the mounting stage, there are two *lifecycle hooks* you can use: `componentWillMount` and `componentDidMount`. 
+When the component is initially created, it gets "mounted" onto the DOM. It sounds more complicated than it is: essentially the component figures out its initial state and renders its initial HTML onto the page. At the mounting stage, there are two *lifecycle hooks* you can use: `componentWillMount` and `componentDidMount`.
 
 `componentWillMount` will get called just _before_ `render()` so you can use it to change the initial state if you need to, whereas `componentDidMount` will get called just _after_ the `render()` method. You would use this method to set up any long-running processes such as fetching and updating data.
 
